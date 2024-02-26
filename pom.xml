@@ -47,33 +47,33 @@
 		</dependency>
 
 
-		<!-- Hibernate Search       -->
-<!--		<dependency>-->
-<!--			<groupId>org.hibernate.search</groupId>-->
-<!--			<artifactId>hibernate-search-mapper-orm</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.hibernate.search</groupId>-->
-<!--			<artifactId>hibernate-search-backend-lucene</artifactId>-->
-<!--		</dependency>-->
-<!--		-->
+		<!--		 Hibernate Search       -->
+		<dependency>
+			<groupId>org.hibernate.search</groupId>
+			<artifactId>hibernate-search-mapper-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.search</groupId>
+			<artifactId>hibernate-search-backend-lucene</artifactId>
+		</dependency>
+
 
 
 	</dependencies>
 
-<!--	<dependencyManagement>-->
-<!--		<dependencies>-->
-<!--			&lt;!&ndash; Import Hibernate Search BOM to get all of its artifact versions aligned: &ndash;&gt;-->
-<!--			<dependency>-->
-<!--				<groupId>org.hibernate.search</groupId>-->
-<!--				<artifactId>hibernate-search-bom</artifactId>-->
-<!--				<version>7.0.0.Final</version>-->
-<!--				<type>pom</type>-->
-<!--				<scope>import</scope>-->
-<!--			</dependency>-->
-<!--			&lt;!&ndash; Any other dependency management entries &ndash;&gt;-->
-<!--		</dependencies>-->
-<!--	</dependencyManagement>-->
+	<dependencyManagement>
+		<dependencies>
+			<!-- Import Hibernate Search BOM to get all of its artifact versions aligned: -->
+			<dependency>
+				<groupId>org.hibernate.search</groupId>
+				<artifactId>hibernate-search-bom</artifactId>
+				<version>7.0.0.Final</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- Any other dependency management entries -->
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

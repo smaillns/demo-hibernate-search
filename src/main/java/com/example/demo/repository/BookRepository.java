@@ -9,12 +9,12 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface BookRepository extends JpaRepository<Book, Integer> {
+public interface BookRepository extends JpaRepository<Book, Integer>, BookRepositoryExt {
 
 
 
-    @Query("SELECT b FROM Book b WHERE lower(b.title) like (concat('%', :query, '%'))")
-    List<Book> findBooksByQuery(@Param("query") String query);
+//    @Query("SELECT b FROM Book b WHERE lower(b.title) like (concat('%', :query, '%'))")
+//    List<Book> findBooksByQuery(@Param("query") String query);
 
 
 }
