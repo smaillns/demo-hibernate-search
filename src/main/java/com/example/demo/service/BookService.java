@@ -15,9 +15,10 @@ public class BookService {
     private final BookRepository bookRepository;
 
 
-    public List<Book> findAllProducts() {
+    public List<Book> findAllBooks() {
         return this.bookRepository.findAll();
     }
+
 
     public List<Book> searchBook(String query) {
         return this.bookRepository.findBooksByQuery(query);

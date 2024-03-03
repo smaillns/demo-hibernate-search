@@ -1,3 +1,3 @@
 insert into book (id, title)
-values (1, 'book1'),
-       (2, 'book2');
+values (101, 'book1'),
+       (102, 'new book 2');

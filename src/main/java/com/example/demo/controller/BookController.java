@@ -4,14 +4,8 @@ package com.example.demo.controller;
 import com.example.demo.model.Book;
 import com.example.demo.service.BookService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -24,12 +18,14 @@ public class BookController {
 
     @GetMapping
     public List<Book> getBooks() {
-        return this.bookService.findAllProducts();
+        return this.bookService.findAllBooks();
     }
+
 
     @GetMapping("/search")
     public List<Book> searchBookByQuery(@RequestParam("query") String query) {
         return this.bookService.searchBook(query);
     }
+
 
 }
